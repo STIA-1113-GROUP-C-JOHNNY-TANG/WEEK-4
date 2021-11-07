@@ -36,7 +36,7 @@ public class Assignment1A {
 		q3 = sc.nextInt();
 	
 		tp = (float)((p1*q1) + (p2*q2) + (p3*q3));
-		System.out.printf("Total price :RM%.2f" ,tp);
+		System.out.printf("\nTotal price :RM%.2f" ,tp);
 		
 		if(tp>100)
 		{
@@ -52,7 +52,7 @@ public class Assignment1A {
 			TP = tp - d;
 		}
 		
-		System.out.printf("\nPrice to be paid : RM%.2f" ,TP);
+		System.out.printf("Price to be paid : RM%.2f" ,TP);
 
 	}
 
