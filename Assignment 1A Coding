@@ -1,0 +1,59 @@
+package assignement;
+
+import java.util.Scanner;
+public class Assignment1A {
+
+	public static Scanner sc; 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n; //declare number of items
+		double p1; //declare price of 1st item
+		int q1; // declare quantity of 1st item
+		double p2; //declare price of 2nd item
+		int q2; // declare quantity of 2nd item
+		double p3; //declare price of 3rd item
+		int q3; // declare quantity of 3rd item
+		float tp = 0; //declare total price
+		float d = 0; //declare discount
+		float TP = 0; //declare price to be paid
+		
+		sc = new Scanner(System.in);
+		System.out.println("Enter the number of items : ");
+		n = sc.nextInt();
+		System.out.println("Enter price of first item : RM");
+		p1 = sc.nextDouble();
+		System.out.println("Enter quantity of first item : ");
+		q1 = sc.nextInt();
+		
+		System.out.println("\nEnter price of second item : RM");
+		p2 = sc.nextDouble();
+		System.out.println("Enter quantity of second item : ");
+		q2 = sc.nextInt();
+		
+		System.out.println("\nEnter price of third item : RM");
+		p3 = sc.nextDouble();
+		System.out.println("Enter quantity of third item : ");
+		q3 = sc.nextInt();
+	
+		tp = (float)((p1*q1) + (p2*q2) + (p3*q3));
+		System.out.printf("Total price :RM%.2f" ,tp);
+		
+		if(tp>100)
+		{
+			d = (float)(tp * 0.2);
+			System.out.println("\nDiscount received : RM" +d);
+			TP = tp - d;
+		}
+		
+		else if (tp<100)
+		{
+			d = (float)(tp * 0.1);
+			System.out.printf("\nDiscount received : RM%.2f" ,d);
+			TP = tp - d;
+		}
+		
+		System.out.printf("\nPrice to be paid : RM%.2f" ,TP);
+
+	}
+
+}
