@@ -41,7 +41,7 @@ public class Assignment1A {
 		if(tp>100)
 		{
 			d = (float)(tp * 0.2);
-			System.out.println("\nDiscount received : RM" +d);
+			System.out.printf("\nDiscount received : RM%.2f" ,d);
 			TP = tp - d;
 		}
 		
@@ -52,7 +52,7 @@ public class Assignment1A {
 			TP = tp - d;
 		}
 		
-		System.out.printf("Price to be paid : RM%.2f" ,TP);
+		System.out.printf("\nPrice to be paid : RM%.2f" ,TP);
 
 	}
 
